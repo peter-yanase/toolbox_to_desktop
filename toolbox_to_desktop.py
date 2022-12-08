@@ -12,7 +12,7 @@ PATHS: list[Path] = [(SOURCE / "share/icons/"), (SOURCE / "share/applications/")
 
 def create_desktop() -> None:
     search_term: str = input("Search: ").lower()
-    paths_found: list[Path] = sum([list(path.rglob(f'{search_term}*')) for path in PATHS], [])
+    paths_found: list[Path] = sum([list(path.rglob(f'*{search_term}*')) for path in PATHS], [])
     if not paths_found:
         sys.exit("Nothing found.")
     for path_found in paths_found:
