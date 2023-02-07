@@ -10,7 +10,7 @@ This is a simple script that exports desktop entries from a toolbox on Fedora Si
 
 ## Notes
 
-1. The container name is set to the default value on Silverblue 37: `fedora-toolbox-37"`, if your toolbox has a different name, change the variable in the script. (See the line with the comment.)
+1. The container name is set to the default value on Silverblue 37: `fedora-toolbox-37`, if your toolbox has a different name, change the variable in the script. (See the line with the comment.)
 2. If a launcher does not work, open the generated `.desktop` file in `~/.local/share/applications/` and try modifying it some more. For example, you could try changing `dbusactivatable` or `terminal` to `false`.
 
 ## History
