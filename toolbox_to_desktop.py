@@ -4,7 +4,7 @@ import sys
 
 assert (sys.version_info >= (3, 5))
 
-CONTAINER: str = "fedora-toolbox-37"  # Rename to appropriate
+CONTAINER: str = "fedora-toolbox-38"  # Rename to appropriate
 SOURCE: Path = Path("/usr")
 TARGET: Path = Path.home() / ".local"
 PATHS: list[Path] = [(SOURCE / "share/icons/"), (SOURCE / "share/applications/")]
